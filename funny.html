@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schizophrenia </title>
+    <!-- Add your stylesheets and scripts here -->
+    <style>
+        /* Add your styles here */
+    </style>
+    <script>
+        function submitQuiz() {
+            // Count the number of correct answers (dummy logic for illustration)
+            var correctAnswers = 0;
+
+            // Replace this logic with your actual quiz evaluation
+            for (var i = 1; i <= 10; i++) {
+                var answer = document.querySelector('input[name="q' + i + '"]:checked');
+                if (answer && answer.value === 'yes') {
+                    correctAnswers++;
+                }
+            }
+
+            // Display result based on the number of correct answers
+            var resultContainer = document.getElementById('quiz-results');
+            if (correctAnswers > 5) {
+                resultContainer.innerHTML = '<p>You are suffering from Schizophrenia, please seek help.</p>';
+            } else {
+                resultContainer.innerHTML = '<p>No, you are not suffering from Schizophrenia.</p>';
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>Schizophrenia </h1>
+    </header>
+
+    <section id="delusions">
+        <h2>Schizophrenic Delusions</h2>
+        <p>Schizophrenic delusions are false beliefs that individuals with schizophrenia strongly hold despite evidence to the contrary. These delusions often involve distorted interpretations of reality...</p>
+    </section>
+
+    <section id="diagnosis">
+        <h2>Diagnosis of Schizophrenia</h2>
+        <p>The diagnosis of schizophrenia is a comprehensive process involving a thorough assessment of symptoms, medical history, and psychological evaluations. Mental health professionals refer to the Diagnostic and Statistical Manual of Mental Disorders (DSM-5) criteria...</p>
+    </section>
+
+    <section id="prognosis">
+        <h2>Prognosis of Schizophrenia</h2>
+        <p>The prognosis of schizophrenia varies for each individual. Early diagnosis and intervention can significantly improve outcomes. With proper treatment, including medication, therapy, and community support, many individuals with schizophrenia lead fulfilling lives...</p>
+    </section>
+
+    <section id="discharge">
+        <h2>Discharge from Hospital and Rejoining the Community</h2>
+        <p>Discharge from a hospital following a schizophrenia-related episode is a crucial step in the recovery process. It involves a transition from acute care to ongoing support. Discharge plans typically include medication management, therapy, and community resources...</p>
+    </section>
+
+    <section id="kraepelin">
+        <h2>Emil Kraepelin</h2>
+        <p>Emil Kraepelin, a pioneering psychiatrist, made significant contributions to the understanding of mental disorders. His work laid the foundation for the modern classification of psychiatric illnesses. Kraepelin's emphasis on empirical observation and classification has shaped the field of psychiatry...</p>
+        <img src="Emil.jpg" alt="Emil Kraepelin" width="200">
+    </section>
+
+    <section id="famous-people">
+        <h2>Famous People with Schizophrenia</h2>
+        <ul>
+            
+            <li>Vincent van Gogh</li>
+            <li>Syd Barrett</li>
+            <li>Lionel Aldridge</li>
+            <li>Brian Wilson</li>
+            <li>Veronica Lake</li>
+            <li>Darrel Hammond</li>
+            <li>Bettie Page</li>
+            <li>Peter Green</li>
+            <li>John Nash</li>
+            <li>Eduard Einstein</li>
+        </ul>
+        <p></p>
+        <p>Do you find yourself in a different world and frustrated?</p>
+        <img src="mushrooms.jpg" alt="mushrooms" width="200">
+        <br />
+        <p>Do you feel trapped in a whirlwind?</p>
+        <img src="blue_whirlwind.jpg" alt="blue_whirlwind" width="200">
+    </section>
+
+    <section id="quiz">
+        <h2>Schizophrenia Quiz </h2>
+        <form onsubmit="event.preventDefault(); submitQuiz();">
+            Question 1: Do you feel like there is someone else accommodating your body?
+            <input type="radio" name="q1" value="yes"> Yes
+            <input type="radio" name="q1" value="no"> No
+            <br />
+            Question 2 : Do you feel like the police and higher authoroties are after you?  
+            <input type="radio" name="q2" value="yes"> Yes
+            <input type="radio" name="q2" value="no"> No 
+
+            <br />
+
+            Question 3 : Do you hear voices discussing your thoughts?  
+            <input type="radio" name="q3" value="yes"> Yes
+            <input type="radio" name="q3" value="no"> No 
+
+            <br />
+
+            Question 4 :  Do you believe that you have magical powers?  
+            <input type="radio" name="q4" value="yes"> Yes
+            <input type="radio" name="q4" value="no"> No 
+
+            <br />
+
+            Question 5 : Do you feel like demons are trying to posess you?  
+            <input type="radio" name="q5" value="yes"> Yes
+            <input type="radio" name="q5" value="no"> No 
+
+            <br />
+
+            Question 6 : Do you feel nervous sometimes and laugh at things that are not funny?  
+            <input type="radio" name="q6" value="yes"> Yes
+            <input type="radio" name="q6" value="no"> No 
+
+            <br />
+
+            Question 7 : Do you feel like there is a New World Order?  
+            <input type="radio" name="q7" value="yes"> Yes
+            <input type="radio" name="q7" value="no"> No 
+
+            <br /> 
+
+            Question 8 : Are you paranoid and think that people are "after you" ?    
+            <input type="radio" name="q8" value="yes"> Yes
+            <input type="radio" name="q8" value="no"> No 
+
+            <br />
+
+            Question 9 : Your food is poisoned?   
+            <input type="radio" name="q9" value="yes"> Yes
+            <input type="radio" name="q9" value="no"> No 
+
+            <br />
+
+            Question 10 : Do you experience hallucinations or pictures "coming alive" around you?    
+            <input type="radio" name="q10" value="yes"> Yes
+            <input type="radio" name="q10" value="no"> No 
+
+
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </section>
+
+    <section id="quiz-results">
+        <!-- Results will be displayed here -->
+    </section>
+
+    <!-- Your additional sections and content -->
+
+    <footer>
+        <p>Contact us: warrenchewepener@gmail.com</p>
+    </footer>
+
+</body>
+</html>
